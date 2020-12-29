@@ -4,10 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { AlertPageRoutingModule } from './alert-routing.module';
+import { FabPageRoutingModule } from './fab-routing.module';
 
-
-import { AlertPage } from './alert.page';
+import { FabPage } from './fab.page';
 import { ComponentsModule } from '../../components/components.module';
 
 @NgModule({
@@ -15,9 +14,9 @@ import { ComponentsModule } from '../../components/components.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    AlertPageRoutingModule,
+    FabPageRoutingModule,
     ComponentsModule
   ],
-  declarations: [AlertPage]
+  declarations: [FabPage]
 })
-export class AlertPageModule {}
+export class FabPageModule {}

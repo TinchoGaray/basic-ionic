@@ -4,10 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { AlertPageRoutingModule } from './alert-routing.module';
+import { DateTimePageRoutingModule } from './date-time-routing.module';
 
-
-import { AlertPage } from './alert.page';
+import { DateTimePage } from './date-time.page';
 import { ComponentsModule } from '../../components/components.module';
 
 @NgModule({
@@ -15,9 +14,9 @@ import { ComponentsModule } from '../../components/components.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    AlertPageRoutingModule,
+    DateTimePageRoutingModule,
     ComponentsModule
   ],
-  declarations: [AlertPage]
+  declarations: [DateTimePage]
 })
-export class AlertPageModule {}
+export class DateTimePageModule {}

@@ -4,10 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { AlertPageRoutingModule } from './alert-routing.module';
+import { CheckPageRoutingModule } from './check-routing.module';
 
-
-import { AlertPage } from './alert.page';
+import { CheckPage } from './check.page';
 import { ComponentsModule } from '../../components/components.module';
 
 @NgModule({
@@ -15,9 +14,9 @@ import { ComponentsModule } from '../../components/components.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    AlertPageRoutingModule,
+    CheckPageRoutingModule,
     ComponentsModule
   ],
-  declarations: [AlertPage]
+  declarations: [CheckPage]
 })
-export class AlertPageModule {}
+export class CheckPageModule {}

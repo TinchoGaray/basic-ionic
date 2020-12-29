@@ -34,6 +34,26 @@ export class InicioPage implements OnInit {
       icon:'radio-button-off-outline',
       name: 'Button',
       redirectTo: '/button'
+    },
+    {
+      icon:'card-outline',
+      name: 'Cards',
+      redirectTo: '/card'
+    },
+    {
+      icon:'checkmark-circle-outline',
+      name: 'Checks',
+      redirectTo: '/check'
+    },
+    {
+      icon:'calendar-outline',
+      name: 'Date Time',
+      redirectTo: '/date-time'
+    },
+    {
+      icon:'car-outline',
+      name: 'Fab',
+      redirectTo: '/fab'
     }
   ];
 
