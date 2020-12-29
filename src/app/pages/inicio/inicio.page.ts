@@ -21,9 +21,19 @@ export class InicioPage implements OnInit {
       redirectTo: '/action-sheet'
     },
     {
-      icon:'logo-apple-appstore',
+      icon:'alert-circle-outline',
       name: 'Alert',
       redirectTo: '/alert'
+    },
+    {
+      icon:'beaker-outline',
+      name: 'Avatar',
+      redirectTo: '/avatar'
+    },
+    {
+      icon:'radio-button-off-outline',
+      name: 'Button',
+      redirectTo: '/button'
     }
   ];
 
