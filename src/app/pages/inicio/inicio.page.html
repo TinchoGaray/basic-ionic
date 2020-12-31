@@ -1,16 +1,29 @@
-<ion-header>
+<ion-header class="ion-no-border">
     <ion-toolbar>
+
+        <ion-buttons slot="start">
+            <ion-menu-button menu="first"></ion-menu-button>
+        </ion-buttons>
+
+
+        <!-- Esta es la forma larga de hacer un menu -->
+        <!-- <ion-buttons slot="start">
+            <ion-button (click)="mostrarMenu()">
+                <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+            </ion-button>
+        </ion-buttons> -->
+
+
         <ion-title>inicio</ion-title>
     </ion-toolbar>
 </ion-header>
 
 <ion-content>
     <ion-list>
-        <ion-item *ngFor="let c of componentes" [routerLink]="c.redirectTo">
+        <ion-item *ngFor="let c of componentes | async " [routerLink]="c.redirectTo">
             <ion-icon [name]="c.icon" slot="start"></ion-icon>
             {{c.name}}
         </ion-item>
-
     </ion-list>
     <!-- Forma vieja -->
     <!-- <ion-button routerLink="/alert">Alert</ion-button>

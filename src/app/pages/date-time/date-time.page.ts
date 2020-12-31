@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class DateTimePage implements OnInit {
 
 
-  fechaNaci: date = new Date();
+  fechaNaci: Date = new Date();
 
   customPickerOptions = {
     buttons:[
@@ -31,7 +31,7 @@ export class DateTimePage implements OnInit {
 
   CambioFecha(event){
     console.log(event);
-    console.log( new Date(event.detail.value))
+    console.log( new Date(event.detail.value));
   }
 
 }

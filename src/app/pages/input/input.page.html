@@ -1,0 +1,53 @@
+<app-header [titulo]="nombre || 'Input Forms'"></app-header>
+
+
+<ion-content class="ion-padding">
+
+    <ion-list>
+        <ion-list-header>
+            <ion-label>Input Normal</ion-label>
+        </ion-list-header>
+
+        <ion-item>
+            <ion-label>Nombre:</ion-label>
+            <ion-input type="text" placeholder="Ingrese el nombre" [(ngModel)]="nombre"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label position="floating">Floating Label</ion-label>
+            <ion-input></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label position="stacked">Stacked Label</ion-label>
+            <ion-input></ion-input>
+        </ion-item>
+
+    </ion-list>
+
+    <form #formulario="ngForm">
+
+        <ion-list-header>
+            <ion-label>Formulari Válido : {{formulario.valid}}</ion-label>
+        </ion-list-header>
+
+        <ion-item>
+            <ion-label>Email:</ion-label>
+            <ion-input type="email" placeholder="Email@gmail.com" name="email" required [(ngModel)]="usuario.email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Password: </ion-label>
+            <ion-input type="password" placeholder="Contraseña:" [(ngModel)]="usuario.password" name="password" required></ion-input>
+        </ion-item>
+
+        <!-- Otra forma de poder enviar los datos cuando se confirman es añadir en el form un (ngSubmit)="onSubmit(formulario)" y en el ts hacer la funcion y definir que formulario
+        que se recibe es NgForm -->
+
+        <ion-button type="submit" expand="block" class="ion-padding" [disabled]="formulario.invalid" (click)="onClick(formulario)">
+            Click me
+        </ion-button>
+
+    </form>
+
+</ion-content>
